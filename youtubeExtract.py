@@ -62,15 +62,15 @@ def FrameCapture(videoPath):
         print ('Error: Creating directory of '+saveDir)
 
     vid = cv2.VideoCapture(videoPath)
-
+    #get frame of video
+    fps = vid.get(cv2.CAP_PROP_FPS)
     count = 0
     next = True
     # capture frame until frame end
     while(next):
         next, image = vid.read()
-        # trim rate by 20 -> needs modification
-        #   in the future, add code so that trim rate varies by fps of video
-        if(int(vid.get(1)%20!=0)):
+        #  trim rate varies by fps of video
+        if(int(vid.get(1)%int(fps)!=0)):
             continue
         print('Processing frame number : ' + str(int(vid.get(1))))
         # save current frame in jpg format
