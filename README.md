@@ -4,7 +4,7 @@
 ## ToDo
 - [ ] make different output Dir on each query → currently saved to "videoDirectory"
 - [ ] should be modified to download certain video quality
-- [ ] modify "FrameCapture" → vary trim rate by FPS of video
+- [x] modify "FrameCapture" → vary trim rate by FPS of video
 - [ ] enable multiprocessing → compute "FrameCapture" parallel
 - [ ] add "requirements.txt"
 
