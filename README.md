@@ -2,22 +2,13 @@
 
 ## Status: In Progress
 ## ToDo
-- [ ] make different output Dir on each query → currently saved to "videoDirectory"
-- [ ] should be modified to download certain video quality
-- [x] modify "FrameCapture" → vary trim rate by FPS of video
-- [ ] enable multiprocessing → compute "FrameCapture" parallel
+- [ ] make different output Dir on each query
+- [ ] modify output to timestamp of the frame
+- [x] enable multiprocessing for faceRex
+- [ ] optimize multiprocessing threading
+- [ ] organize console progressbar
 - [ ] add "requirements.txt"
 
 ## 사용방법:
 
-  youtubeExtract [keyword] [-num_of_result]
-
-  e.g. youtubeExtract flower -5
-
-## input:
-
-  keyword, num_of_result
-
-## output:
-
-  Directories with jpg format frame images
+python main.py
